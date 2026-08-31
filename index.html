@@ -171,17 +171,6 @@
 <div class="layout">
   <aside class="sync-panel">
     <section>
-      <h2>Live value <span style="color:var(--muted-2);text-transform:none;font-weight:400;">(replacement depth)</span></h2>
-      <div class="note" style="margin-top:0;">How many players at each spot count as "startable" before value badges kick in. Lower = scarcer = badges appear sooner.</div>
-      <div class="settings-grid">
-        <label>QB<input type="number" id="replQB" value="12"></label>
-        <label>RB<input type="number" id="replRB" value="30"></label>
-        <label>WR<input type="number" id="replWR" value="36"></label>
-        <label>TE<input type="number" id="replTE" value="12"></label>
-      </div>
-    </section>
-
-    <section>
       <h2>Sleeper</h2>
       <label for="sleeperId">Draft ID</label>
       <input type="text" id="sleeperId" placeholder="e.g. 987654321012345678">
@@ -232,6 +221,17 @@
       <h2>Manual</h2>
       <div class="note" style="margin-top:0;">Click a player: open → theirs → mine → open again. Works regardless of platform or API sync.</div>
       <button class="btn secondary" id="resetBtn" style="margin-top:10px;width:100%;">Reset all picks</button>
+    </section>
+
+    <section>
+      <h2>Live value <span style="color:var(--muted-2);text-transform:none;font-weight:400;">(replacement depth)</span></h2>
+      <div class="note" style="margin-top:0;">How many players at each spot count as "startable" before value badges kick in. Lower = scarcer = badges appear sooner.</div>
+      <div class="settings-grid">
+        <label>QB<input type="number" id="replQB" value="12"></label>
+        <label>RB<input type="number" id="replRB" value="30"></label>
+        <label>WR<input type="number" id="replWR" value="36"></label>
+        <label>TE<input type="number" id="replTE" value="12"></label>
+      </div>
     </section>
   </aside>
 
